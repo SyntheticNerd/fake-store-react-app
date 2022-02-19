@@ -14,15 +14,15 @@ export default function MyRouter() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<App url={url} setUrl={setUrl} />}>
+          <Route path='/' element={<App url={url} setUrl={setUrl} />}>
             {/* Use a slash to denote the home page */}
             <Route index element={<ProductArray />} />
-            <Route path="cart" element={<Cart />} />
-            <Route path="catagory/:catagoryId" element={<ProductArray />} />
-            <Route path="products/:productId" element={<ProductPage />} />
-            <Route path="checkout" element={<Checkout />} />
-            <Route path="account" element={<Account />} />
-            <Route path="search/:query" element={<ProductArray />} />
+            <Route path='cart' element={<Cart />} />
+            <Route path='catagory/:catagoryId' element={<ProductArray />} />
+            <Route path='products/:productId' element={<ProductPage />} />
+            <Route path='checkout' element={<Checkout />} />
+            <Route path='account' element={<Account />} />
+            <Route path='search/:query' element={<ProductArray />} />
             {/* <Route path="*" element={<NotFound />} /> */}
             {/* the '*' will match all strings that dont match route need 404 page */}
           </Route>
