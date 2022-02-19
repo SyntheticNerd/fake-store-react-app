@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.04da1fcc.css",
-    "main.js": "/static/js/main.23ea7321.js",
-    "static/media/cart.svg": "/static/media/cart.726799d799531a20e7d088e490c5a6f1.svg",
-    "static/media/round_close.svg": "/static/media/round_close.a914b68695b7bbec11eec2ae8f324a7c.svg",
-    "index.html": "/index.html",
-    "static/media/star.svg": "/static/media/star.6c9d4daa439e7db2dc85ab3292734590.svg",
-    "static/media/search.svg": "/static/media/search.aced1b818d61cdb22f46250d10aab7e0.svg",
-    "static/media/profile.svg": "/static/media/profile.8ee8a2f15e81ffab74378f58d60b06a7.svg",
-    "main.04da1fcc.css.map": "/static/css/main.04da1fcc.css.map",
-    "main.23ea7321.js.map": "/static/js/main.23ea7321.js.map"
+    "main.css": "/fake-store-react-app/static/css/main.04da1fcc.css",
+    "main.js": "/fake-store-react-app/static/js/main.7bae6170.js",
+    "static/media/cart.svg": "/fake-store-react-app/static/media/cart.726799d799531a20e7d088e490c5a6f1.svg",
+    "static/media/round_close.svg": "/fake-store-react-app/static/media/round_close.a914b68695b7bbec11eec2ae8f324a7c.svg",
+    "index.html": "/fake-store-react-app/index.html",
+    "static/media/star.svg": "/fake-store-react-app/static/media/star.6c9d4daa439e7db2dc85ab3292734590.svg",
+    "static/media/search.svg": "/fake-store-react-app/static/media/search.aced1b818d61cdb22f46250d10aab7e0.svg",
+    "static/media/profile.svg": "/fake-store-react-app/static/media/profile.8ee8a2f15e81ffab74378f58d60b06a7.svg",
+    "main.04da1fcc.css.map": "/fake-store-react-app/static/css/main.04da1fcc.css.map",
+    "main.7bae6170.js.map": "/fake-store-react-app/static/js/main.7bae6170.js.map"
   },
   "entrypoints": [
     "static/css/main.04da1fcc.css",
-    "static/js/main.23ea7321.js"
+    "static/js/main.7bae6170.js"
   ]
 }
