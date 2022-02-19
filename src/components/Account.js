@@ -18,6 +18,7 @@ export default function Account() {
       />
       <button onClick={() => dispatch(setFName(firstName))}>Enter</button>
       <p>{first}</p>
+      <p>test</p>
     </>
   );
 }
