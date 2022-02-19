@@ -12,7 +12,7 @@ export default function MyRouter() {
 
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path='/' element={<App url={url} setUrl={setUrl} />}>
             {/* Use a slash to denote the home page */}
