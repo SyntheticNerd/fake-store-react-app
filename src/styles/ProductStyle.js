@@ -65,6 +65,9 @@ export const CardCartBtn = styled.button`
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  &:hover {
+    scale: 1.1;
+  }
 `;
 
 export const PageCartBtn = styled.button`
@@ -139,4 +142,7 @@ export const SortBtn = styled.button`
   transition: all 0.2s;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  &:hover {
+    scale: 1.1;
+  }
 `;
