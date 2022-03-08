@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../utils/utils";
 import ProductCard from "./ProductCard";
-import { ProductArrContainer, SortBtn } from "../../styles/ProductStyle";
+import {
+  ProductArrContainer,
+  SortBtn,
+  SortIcons,
+} from "../../styles/ProductStyle";
 import Catagories from "./Catagories";
 import { useParams } from "react-router-dom";
 
@@ -80,39 +84,50 @@ export default function ProductArray() {
   return (
     <>
       {!params.catagoryId && !params.query && <Catagories />}
-      <SortBtn onClick={() => setSort(!sort)}>
-        {sort ? (
-          <i className="fa fa-bars" style={{ fontSize: "18px" }}></i>
-        ) : (
-          <i className="fa fa-sort" style={{ fontSize: "18px" }}></i>
-        )}
-      </SortBtn>
-      <SortBtn disabled={!sort ? true : false} onClick={() => setType(!type)}>
-        {type ? (
-          <i className="fa fa-money" style={{ fontSize: "18px" }}></i>
-        ) : (
-          <i className="fa fa-font" style={{ fontSize: "18px" }}></i>
-        )}
-      </SortBtn>
-      <SortBtn disabled={!sort ? true : false} onClick={() => setOrder(!order)}>
-        {type ? (
-          order ? (
+      <SortIcons>
+        <SortBtn onClick={() => setSort(!sort)}>
+          {sort ? (
+            <i className='fa fa-bars' style={{ fontSize: "18px" }}></i>
+          ) : (
+            <i className='fa fa-sort' style={{ fontSize: "18px" }}></i>
+          )}
+        </SortBtn>
+        <SortBtn disabled={!sort ? true : false} onClick={() => setType(!type)}>
+          {type ? (
+            <i className='fa fa-money' style={{ fontSize: "18px" }}></i>
+          ) : (
+            <i className='fa fa-font' style={{ fontSize: "18px" }}></i>
+          )}
+        </SortBtn>
+        <SortBtn
+          disabled={!sort ? true : false}
+          onClick={() => setOrder(!order)}
+        >
+          {type ? (
+            order ? (
+              <i
+                className='fa fa-sort-numeric-asc'
+                style={{ fontSize: "18px" }}
+              ></i>
+            ) : (
+              <i
+                className='fa fa-sort-numeric-desc'
+                style={{ fontSize: "18px" }}
+              ></i>
+            )
+          ) : order ? (
             <i
-              className="fa fa-sort-numeric-asc"
+              className='fa fa-sort-alpha-asc'
               style={{ fontSize: "18px" }}
             ></i>
           ) : (
             <i
-              className="fa fa-sort-numeric-desc"
+              className='fa fa-sort-alpha-desc'
               style={{ fontSize: "18px" }}
             ></i>
-          )
-        ) : order ? (
-          <i className="fa fa-sort-alpha-asc" style={{ fontSize: "18px" }}></i>
-        ) : (
-          <i className="fa fa-sort-alpha-desc" style={{ fontSize: "18px" }}></i>
-        )}
-      </SortBtn>
+          )}
+        </SortBtn>
+      </SortIcons>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <ProductArrContainer>
           {products.length ? (

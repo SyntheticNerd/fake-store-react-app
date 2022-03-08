@@ -146,3 +146,9 @@ export const SortBtn = styled.button`
     scale: 1.1;
   }
 `;
+
+export const SortIcons = styled.div`
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+`;
