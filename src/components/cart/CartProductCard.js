@@ -13,19 +13,19 @@ import DeleteBtn from "../props/DeleteBtn";
 import { CartContext } from "../../context/CartContext";
 import { useNavigate } from "react-router-dom";
 
-export default function CartProductCard({ productId, quantity }) {
+export default function CartProductCard({ data, quantity }) {
   const [newQuantity, setQuantity] = useState(quantity ? quantity : 1);
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
   const { updateQtty } = useContext(CartContext);
   const navigate = useNavigate();
   useEffect(() => {
-    updateQtty(productId, newQuantity);
-    async function loadArr() {
-      let product = await getProducts(`/products/${productId}`);
-      setData(product);
-    }
-    loadArr();
-  }, [productId, newQuantity, updateQtty]);
+    updateQtty(data.id, newQuantity);
+    // async function loadArr() {
+    //   let product = await getProducts(`/products/${productId}`);
+    //   setData(product);
+    // }
+    // loadArr();
+  }, [data, newQuantity, updateQtty]);
 
   let onClick = (id) => {
     navigate(`/products/${id}`);
@@ -44,9 +44,9 @@ export default function CartProductCard({ productId, quantity }) {
               zIndex: "0"
               // transform: "translate(-16px, -16px)"
             }}
-            onClick={() => onClick(productId)}
+            onClick={() => onClick(data.id)}
           ></div>
-          <DeleteBtn productId={productId} />
+          <DeleteBtn productId={data.id} />
           <div
             style={{
               width: "4em",

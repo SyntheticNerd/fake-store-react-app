@@ -8,7 +8,7 @@ import {
   CartPage,
   CartList,
   CheckoutDet,
-  CheckoutBtn
+  CheckoutBtn,
 } from "../../styles/CartStyle";
 
 export default function Cart({ url }) {
@@ -16,6 +16,7 @@ export default function Cart({ url }) {
   let navigate = useNavigate();
   useEffect(() => {
     cartQtty <= 0 && navigate("/");
+    console.log(cartArr);
   });
   return (
     <>
@@ -35,11 +36,13 @@ export default function Cart({ url }) {
         <CartList>
           {cartArr.length ? (
             cartArr.map((item) => (
-              <CartProductCard
-                key={`${item.product.id}${item.product.price}`}
-                productId={item.product.id}
-                quantity={item.quantity}
-              />
+              <>
+                <CartProductCard
+                  key={`${item.product.id}${item.product.price}`}
+                  data={item.product}
+                  quantity={item.quantity}
+                />
+              </>
             ))
           ) : (
             <></>
