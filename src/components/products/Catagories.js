@@ -73,6 +73,7 @@ class Catagories extends React.Component {
                 boxShadow: "0px 8px 16px rgba(0, 0, 0, 0.5)",
                 padding: "32px",
                 borderRadius: "8px",
+                width: "80%",
               }}
             >
               Cannot contact Fake Store API <br />{" "}
@@ -82,7 +83,7 @@ class Catagories extends React.Component {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                https://fakestoreapi.com/
+                fakestoreapi
               </a>
             </h1>
           )}
