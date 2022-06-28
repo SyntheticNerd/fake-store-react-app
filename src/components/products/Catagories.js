@@ -26,7 +26,8 @@ class Catagories extends React.Component {
   componentDidMount() {
     getProducts("products/categories")
       .then((res) => {
-        if (!res.ok) {
+        if (!res.length) {
+          console.log(res.ok)
           throw new Error("HTTP error " + res.status);
         }
         this.setState({ categories: res });
@@ -55,16 +56,7 @@ class Catagories extends React.Component {
             justifyContent: "center",
           }}
         >
-          {!this.state.error ? (
-            this.state.categories.map((category, index) => (
-              <div key={`${index}${category}`}>
-                <CatBtn onClick={() => this.onClick(category)}>
-                  <Thumbnail url={this.state.images[index]} />
-                  {category}
-                </CatBtn>
-              </div>
-            ))
-          ) : (
+          {this.state.error && (
             <h1
               style={{
                 marginTop: "80px",
@@ -87,6 +79,14 @@ class Catagories extends React.Component {
               </a>
             </h1>
           )}
+          {this.state.categories.length && this.state.categories.map((category, index) => (
+            <div key={`${index}${category}`}>
+              <CatBtn onClick={() => this.onClick(category)}>
+                <Thumbnail url={this.state.images[index]} />
+                {category}
+              </CatBtn>
+            </div>
+          ))}
         </div>
       </>
     );
