@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fake-store-react-app/static/css/main.04da1fcc.css",
-    "main.js": "/fake-store-react-app/static/js/main.30307afe.js",
+    "main.js": "/fake-store-react-app/static/js/main.fcb14efa.js",
     "static/media/cart.svg": "/fake-store-react-app/static/media/cart.726799d799531a20e7d088e490c5a6f1.svg",
     "static/media/round_close.svg": "/fake-store-react-app/static/media/round_close.a914b68695b7bbec11eec2ae8f324a7c.svg",
     "index.html": "/fake-store-react-app/index.html",
@@ -9,10 +9,10 @@
     "static/media/search.svg": "/fake-store-react-app/static/media/search.aced1b818d61cdb22f46250d10aab7e0.svg",
     "static/media/profile.svg": "/fake-store-react-app/static/media/profile.8ee8a2f15e81ffab74378f58d60b06a7.svg",
     "main.04da1fcc.css.map": "/fake-store-react-app/static/css/main.04da1fcc.css.map",
-    "main.30307afe.js.map": "/fake-store-react-app/static/js/main.30307afe.js.map"
+    "main.fcb14efa.js.map": "/fake-store-react-app/static/js/main.fcb14efa.js.map"
   },
   "entrypoints": [
     "static/css/main.04da1fcc.css",
-    "static/js/main.30307afe.js"
+    "static/js/main.fcb14efa.js"
   ]
 }
