@@ -4,6 +4,7 @@
 
 - [Fake Store w/ Fake Store API](#fake-store-w-fake-store-api)
   - [Table of contents](#table-of-contents)
+  - [Author](#author)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Links](#links)
@@ -11,7 +12,12 @@
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [Useful resources](#useful-resources)
-  - [Author](#author)
+
+## Author
+
+- Andrew Schroepfer - Developer
+  - [Website](https://syntheticnerd.github.io/)
+  - [Linkedin](https://www.linkedin.com/in/andrew-schroepfer/)
 
 ## Overview
 
@@ -48,11 +54,3 @@ I learned a lot about context and will be looking forward to working with redux 
 - [React](https://reactjs.org/)
 - [React Context](https://reactjs.org/docs/context.html)
 - [Styled Components](https://styled-components.com/)
-
-## Author
-
-- Andrew Schroepfer - Developer
-  - [Website](https://syntheticnerd.github.io/)
-  - [Linkedin](https://www.linkedin.com/in/andrew-schroepfer/)
-- Klay Simmons - Designer
-  - [Linkedin](https://www.linkedin.com/in/klay-simmons-b82b08221/)
